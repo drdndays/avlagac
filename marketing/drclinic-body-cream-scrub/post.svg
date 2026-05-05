@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#fff8f8"/>
+      <stop offset="40%" stop-color="#ffe8ee"/>
+      <stop offset="100%" stop-color="#ffdde6"/>
+    </linearGradient>
+    <!-- Brand bar gradient -->
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#c0112b"/>
+      <stop offset="100%" stop-color="#e8174a"/>
+    </linearGradient>
+    <!-- Bottom bar gradient -->
+    <linearGradient id="bottomGrad" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#2a0a14"/>
+      <stop offset="100%" stop-color="#6b1a28"/>
+    </linearGradient>
+    <!-- Jar body gradient -->
+    <linearGradient id="jarBody" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#ffd6df"/>
+      <stop offset="50%" stop-color="#ffb8cb"/>
+      <stop offset="100%" stop-color="#ff8aaa"/>
+    </linearGradient>
+    <!-- Jar lid gradient -->
+    <linearGradient id="jarLid" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#e8174a"/>
+      <stop offset="100%" stop-color="#c0112b"/>
+    </linearGradient>
+    <!-- Jar shine -->
+    <linearGradient id="jarShine" x1="0" y1="0" x2="0.3" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.60"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- CTA gradient -->
+    <linearGradient id="ctaGrad" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#e8174a"/>
+      <stop offset="100%" stop-color="#ff6b8a"/>
+    </linearGradient>
+    <!-- Drop shadow filter -->
+    <filter id="jarShadow" x="-20%" y="-10%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#e8174a" flood-opacity="0.25"/>
+    </filter>
+    <!-- Card shadow -->
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#c0112b" flood-opacity="0.10"/>
+    </filter>
+    <!-- Decorative background circles -->
+    <radialGradient id="bgCircle1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb4c8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffb4c8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgCircle2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6482" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ff6482" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ── Background ── -->
+  <rect width="1080" height="1350" fill="url(#bgGrad)"/>
+
+  <!-- Decorative background circles -->
+  <circle cx="960" cy="-80" r="350" fill="url(#bgCircle1)"/>
+  <circle cx="-40" cy="1270" r="250" fill="url(#bgCircle2)"/>
+
+  <!-- Decorative strawberry emojis -->
+  <text x="980" y="250" font-size="110" opacity="0.18" transform="rotate(20,980,250)">🍓</text>
+  <text x="-20" y="550" font-size="80" opacity="0.18" transform="rotate(-15,-20,550)">🍓</text>
+  <text x="1020" y="1130" font-size="70" opacity="0.18" transform="rotate(10,1020,1130)">🍓</text>
+
+  <!-- ── Brand bar ── -->
+  <rect x="0" y="0" width="1080" height="90" fill="url(#brandGrad)"/>
+  <text x="54" y="60" font-size="38" font-weight="700" fill="#ffffff" letter-spacing="3" text-anchor="start" font-family="Poppins, Arial, sans-serif">Dr.Clinic</text>
+  <text x="1026" y="58" font-size="18" font-weight="300" fill="rgba(255,255,255,0.85)" letter-spacing="1" text-anchor="end" font-family="Poppins, Arial, sans-serif">Dermatoloji &amp; Estetik</text>
+
+  <!-- ── Title block ── -->
+  <text x="540" y="148" font-size="22" font-weight="300" fill="#c0112b" letter-spacing="4" text-anchor="middle" font-family="Poppins, Arial, sans-serif">BODY CARE · VÜCUT BAKIM</text>
+  <text x="540" y="240" font-size="72" font-weight="700" fill="#2a0a14" text-anchor="middle" font-family="Georgia, serif" font-style="normal">Çilek Özlü</text>
+  <text x="540" y="318" font-size="72" font-weight="700" fill="#e8174a" text-anchor="middle" font-family="Georgia, serif">Krem Peeling</text>
+  <text x="540" y="356" font-size="26" font-weight="300" fill="#7a3040" letter-spacing="2" text-anchor="middle" font-family="Poppins, Arial, sans-serif">Body Cream Scrub · 300 ml</text>
+
+  <!-- ── Product jar illustration ── -->
+  <g transform="translate(320, 375)" filter="url(#jarShadow)">
+    <!-- Jar body -->
+    <rect x="0" y="120" width="440" height="350" rx="30" fill="url(#jarBody)"/>
+    <rect x="0" y="120" width="440" height="350" rx="30" fill="url(#jarShine)"/>
+    <!-- Lid -->
+    <rect x="-20" y="68" width="480" height="70" rx="20" fill="url(#jarLid)"/>
+    <rect x="0" y="74" width="270" height="28" rx="12" fill="rgba(255,255,255,0.28)"/>
+    <!-- Label background -->
+    <rect x="20" y="165" width="400" height="265" rx="16" fill="rgba(255,255,255,0.70)"/>
+    <!-- Dr.Clinic on lid -->
+    <text x="220" y="113" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="28" fill="#ffffff" letter-spacing="3">Dr.Clinic</text>
+    <!-- Body Cream Scrub label -->
+    <text x="220" y="218" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="20" fill="#c0112b" letter-spacing="2">BODY CREAM SCRUB</text>
+    <text x="220" y="248" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="300" font-size="16" fill="#6b3040">Çilek Özlü Krem Peeling</text>
+    <!-- Strawberry on label -->
+    <text x="220" y="350" text-anchor="middle" font-size="80">🍓</text>
+    <!-- 300 ml -->
+    <text x="220" y="410" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="24" fill="#c0112b">300 ml</text>
+    <!-- Corner dots -->
+    <circle cx="40" cy="155" r="8" fill="rgba(232,23,74,0.3)"/>
+    <circle cx="400" cy="155" r="8" fill="rgba(232,23,74,0.3)"/>
+  </g>
+
+  <!-- ── Benefits ── -->
+  <!-- Benefit 1 -->
+  <g filter="url(#cardShadow)">
+    <rect x="54" y="872" width="972" height="110" rx="20" fill="rgba(255,255,255,0.72)"/>
+    <rect x="54" y="872" width="972" height="110" rx="20" fill="none" stroke="rgba(255,180,190,0.4)" stroke-width="1"/>
+  </g>
+  <!-- Benefit icon circle 1 -->
+  <circle cx="118" cy="927" r="36" fill="#e8174a"/>
+  <circle cx="118" cy="927" r="36" fill="url(#ctaGrad)" opacity="0.8"/>
+  <text x="118" y="940" text-anchor="middle" font-size="28">✨</text>
+  <!-- Benefit text 1 -->
+  <text x="174" y="912" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="600" fill="#2a0a14">Derin Arındırma</text>
+  <text x="174" y="940" font-family="Poppins, Arial, sans-serif" font-size="17" font-weight="300" fill="#6b3040">Kayısı çekirdeği tozu ile cildi ölü hücrelerden arındırır; pürüzsüz ve yumuşak görünüm.</text>
+
+  <!-- Benefit 2 -->
+  <g filter="url(#cardShadow)">
+    <rect x="54" y="996" width="972" height="110" rx="20" fill="rgba(255,255,255,0.72)"/>
+    <rect x="54" y="996" width="972" height="110" rx="20" fill="none" stroke="rgba(255,180,190,0.4)" stroke-width="1"/>
+  </g>
+  <circle cx="118" cy="1051" r="36" fill="url(#ctaGrad)"/>
+  <text x="118" y="1064" text-anchor="middle" font-size="28">🌿</text>
+  <text x="174" y="1036" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="600" fill="#2a0a14">Canlı &amp; Antioksidan</text>
+  <text x="174" y="1064" font-family="Poppins, Arial, sans-serif" font-size="17" font-weight="300" fill="#6b3040">Panax ginseng kök özü antioksidan özelliği ile cilde canlı görünüm kazandırmaya yardımcı olur.</text>
+
+  <!-- Benefit 3 -->
+  <g filter="url(#cardShadow)">
+    <rect x="54" y="1120" width="972" height="110" rx="20" fill="rgba(255,255,255,0.72)"/>
+    <rect x="54" y="1120" width="972" height="110" rx="20" fill="none" stroke="rgba(255,180,190,0.4)" stroke-width="1"/>
+  </g>
+  <circle cx="118" cy="1175" r="36" fill="url(#ctaGrad)"/>
+  <text x="118" y="1188" text-anchor="middle" font-size="28">💧</text>
+  <text x="174" y="1160" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="600" fill="#2a0a14">Yoğun Nemlendirme</text>
+  <text x="174" y="1188" font-family="Poppins, Arial, sans-serif" font-size="17" font-weight="300" fill="#6b3040">Gliserin ve hyaluronik asit ile nemlendirir. Hoş kokusuyla bakım keyifli.</text>
+
+  <!-- ── Usage strip ── -->
+  <rect x="54" y="1246" width="972" height="72" rx="16" fill="rgba(255,255,255,0.50)"/>
+  <rect x="54" y="1246" width="972" height="72" rx="16" fill="none" stroke="rgba(255,150,170,0.3)" stroke-width="1"/>
+  <text x="84" y="1288" font-size="26">📋</text>
+  <text x="122" y="1275" font-family="Poppins, Arial, sans-serif" font-size="16" font-weight="700" fill="#c0112b">Kullanım:</text>
+  <text x="222" y="1275" font-family="Poppins, Arial, sans-serif" font-size="16" font-weight="300" fill="#7a3040">Temiz ve nemli cilde dairesel hareketlerle masaj yaparak uygulayın ve bol suyla durulayın.</text>
+  <text x="122" y="1300" font-family="Poppins, Arial, sans-serif" font-size="16" font-weight="700" fill="#c0112b">Haftada 2–3 kez.</text>
+
+  <!-- ── Bottom bar ── -->
+  <rect x="0" y="1260" width="1080" height="90" fill="url(#bottomGrad)"/>
+  <text x="54" y="1312" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="300" fill="rgba(255,255,255,0.7)" letter-spacing="2">300 ml</text>
+  <!-- CTA button -->
+  <rect x="420" y="1273" width="240" height="64" rx="32" fill="url(#ctaGrad)"/>
+  <text x="540" y="1313" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="1">Şimdi Keşfet</text>
+  <!-- Warning text -->
+  <text x="1026" y="1299" text-anchor="end" font-family="Poppins, Arial, sans-serif" font-size="13" fill="rgba(255,255,255,0.45)">Harici kullanım içindir.</text>
+  <text x="1026" y="1318" text-anchor="end" font-family="Poppins, Arial, sans-serif" font-size="13" fill="rgba(255,255,255,0.45)">Göz ile temasından kaçının.</text>
+</svg>

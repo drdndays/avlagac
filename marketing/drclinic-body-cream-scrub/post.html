@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr.Clinic Body Cream Scrub – Instagram Post 1080×1350</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    background: #fff8f8;
+  }
+
+  .canvas {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    background: linear-gradient(160deg, #fff8f8 0%, #ffe8ee 40%, #ffdde6 100%);
+    overflow: hidden;
+  }
+
+  /* ── Decorative circles ── */
+  .bg-circle-1 {
+    position: absolute;
+    width: 700px; height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,180,200,0.25) 0%, transparent 70%);
+    top: -120px; right: -120px;
+  }
+  .bg-circle-2 {
+    position: absolute;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,100,130,0.12) 0%, transparent 70%);
+    bottom: 80px; left: -80px;
+  }
+
+  /* ── Top brand bar ── */
+  .brand-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 90px;
+    background: linear-gradient(90deg, #c0112b 0%, #e8174a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 54px;
+  }
+  .brand-bar .logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .brand-bar .tagline {
+    font-size: 18px;
+    color: rgba(255,255,255,0.85);
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  /* ── Product title block ── */
+  .title-block {
+    position: absolute;
+    top: 120px;
+    left: 54px;
+    right: 54px;
+    text-align: center;
+  }
+  .product-category {
+    font-size: 22px;
+    font-weight: 300;
+    color: #c0112b;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .product-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 72px;
+    font-weight: 700;
+    color: #2a0a14;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  .product-name span {
+    color: #e8174a;
+  }
+  .product-sub {
+    font-size: 26px;
+    font-weight: 300;
+    color: #7a3040;
+    letter-spacing: 2px;
+  }
+
+  /* ── Product illustration ── */
+  .product-wrap {
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 440px;
+    text-align: center;
+  }
+
+  /* ── Benefits section ── */
+  .benefits {
+    position: absolute;
+    bottom: 260px;
+    left: 54px;
+    right: 54px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    background: rgba(255,255,255,0.72);
+    border-radius: 20px;
+    padding: 22px 28px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,180,190,0.4);
+    box-shadow: 0 4px 20px rgba(200,20,60,0.08);
+  }
+  .benefit-icon {
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e8174a, #ff6b8a);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    font-size: 26px;
+  }
+  .benefit-text strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2a0a14;
+    margin-bottom: 4px;
+  }
+  .benefit-text span {
+    font-size: 17px;
+    font-weight: 300;
+    color: #6b3040;
+    line-height: 1.4;
+  }
+
+  /* ── Usage strip ── */
+  .usage-strip {
+    position: absolute;
+    bottom: 108px;
+    left: 54px;
+    right: 54px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 16px;
+    padding: 18px 28px;
+    border: 1px solid rgba(255,150,170,0.3);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .usage-strip .usage-icon { font-size: 28px; }
+  .usage-strip .usage-text {
+    font-size: 16px;
+    color: #7a3040;
+    line-height: 1.5;
+  }
+  .usage-strip .usage-text strong {
+    color: #c0112b;
+    font-weight: 600;
+  }
+
+  /* ── Bottom bar with CTA ── */
+  .bottom-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 90px;
+    background: linear-gradient(90deg, #2a0a14 0%, #6b1a28 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 54px;
+  }
+  .bottom-bar .volume {
+    font-size: 22px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  .cta-btn {
+    background: linear-gradient(90deg, #e8174a, #ff6b8a);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 48px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 6px 24px rgba(232,23,74,0.45);
+  }
+  .bottom-bar .warning {
+    font-size: 14px;
+    color: rgba(255,255,255,0.45);
+    max-width: 260px;
+    text-align: right;
+    line-height: 1.5;
+  }
+
+  /* ── Strawberry decorations ── */
+  .deco-berry {
+    position: absolute;
+    opacity: 0.18;
+    font-size: 110px;
+    user-select: none;
+    pointer-events: none;
+  }
+  .deco-berry-1 { top: 95px; right: 30px; transform: rotate(20deg); }
+  .deco-berry-2 { top: 430px; left: -20px; transform: rotate(-15deg); font-size: 80px; }
+  .deco-berry-3 { bottom: 200px; right: 20px; transform: rotate(10deg); font-size: 70px; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="bg-circle-1"></div>
+  <div class="bg-circle-2"></div>
+
+  <!-- Decorative strawberries -->
+  <div class="deco-berry deco-berry-1">🍓</div>
+  <div class="deco-berry deco-berry-2">🍓</div>
+  <div class="deco-berry deco-berry-3">🍓</div>
+
+  <!-- Top brand bar -->
+  <div class="brand-bar">
+    <span class="logo-text">Dr.Clinic</span>
+    <span class="tagline">Dermatoloji & Estetik</span>
+  </div>
+
+  <!-- Title block -->
+  <div class="title-block">
+    <div class="product-category">Body Care · Vücut Bakım</div>
+    <div class="product-name">Çilek Özlü<br><span>Krem Peeling</span></div>
+    <div class="product-sub">Body Cream Scrub · 300 ml</div>
+  </div>
+
+  <!-- Product illustration (SVG) -->
+  <div class="product-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 480" width="440" height="480">
+      <defs>
+        <linearGradient id="jarBody" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#ffd6df;stop-opacity:1"/>
+          <stop offset="50%" style="stop-color:#ffb8cb;stop-opacity:1"/>
+          <stop offset="100%" style="stop-color:#ff8aaa;stop-opacity:1"/>
+        </linearGradient>
+        <linearGradient id="jarLid" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#e8174a;stop-opacity:1"/>
+          <stop offset="100%" style="stop-color:#c0112b;stop-opacity:1"/>
+        </linearGradient>
+        <linearGradient id="shine" x1="0%" y1="0%" x2="30%" y2="100%">
+          <stop offset="0%" style="stop-color:#fff;stop-opacity:0.6"/>
+          <stop offset="100%" style="stop-color:#fff;stop-opacity:0"/>
+        </linearGradient>
+        <filter id="shadow">
+          <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#e8174a" flood-opacity="0.25"/>
+        </filter>
+      </defs>
+
+      <!-- Jar body -->
+      <g filter="url(#shadow)">
+        <rect x="60" y="130" width="320" height="320" rx="30" fill="url(#jarBody)"/>
+        <!-- Shine overlay -->
+        <rect x="60" y="130" width="320" height="320" rx="30" fill="url(#shine)"/>
+        <!-- Lid -->
+        <rect x="40" y="80" width="360" height="70" rx="20" fill="url(#jarLid)"/>
+        <!-- Lid shine -->
+        <rect x="55" y="85" width="200" height="25" rx="10" fill="rgba(255,255,255,0.25)"/>
+      </g>
+
+      <!-- Label background on jar -->
+      <rect x="80" y="180" width="280" height="230" rx="16" fill="rgba(255,255,255,0.70)"/>
+
+      <!-- Dr.Clinic text on lid -->
+      <text x="220" y="124" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-weight="700" font-size="28" fill="#fff" letter-spacing="3">Dr.Clinic</text>
+
+      <!-- Label: product name -->
+      <text x="220" y="230" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-weight="700" font-size="20" fill="#c0112b" letter-spacing="1">BODY CREAM SCRUB</text>
+      <text x="220" y="260" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-weight="300" font-size="16" fill="#6b3040">Çilek Özlü Krem Peeling</text>
+
+      <!-- Strawberry illustration on label -->
+      <text x="220" y="340" text-anchor="middle" font-size="72">🍓</text>
+
+      <!-- 300 ml -->
+      <text x="220" y="390" text-anchor="middle" font-family="Poppins,Arial,sans-serif" font-weight="600" font-size="22" fill="#c0112b">300 ml</text>
+
+      <!-- Pink dots decoration on jar -->
+      <circle cx="100" cy="165" r="8" fill="rgba(232,23,74,0.3)"/>
+      <circle cx="340" cy="165" r="8" fill="rgba(232,23,74,0.3)"/>
+      <circle cx="115" cy="440" r="6" fill="rgba(232,23,74,0.2)"/>
+      <circle cx="325" cy="440" r="6" fill="rgba(232,23,74,0.2)"/>
+    </svg>
+  </div>
+
+  <!-- Benefits -->
+  <div class="benefits">
+    <div class="benefit-item">
+      <div class="benefit-icon">✨</div>
+      <div class="benefit-text">
+        <strong>Derin Arındırma</strong>
+        <span>Kayısı çekirdeği tozu ile cildi ölü hücrelerden arındırır; pürüzsüz ve yumuşak görünüm.</span>
+      </div>
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-icon">🌿</div>
+      <div class="benefit-text">
+        <strong>Canlı &amp; Antioksidan</strong>
+        <span>Panax ginseng kök özü antioksidan özelliği ile cilde canlı görünüm kazandırmaya yardımcı olur.</span>
+      </div>
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-icon">💧</div>
+      <div class="benefit-text">
+        <strong>Yoğun Nemlendirme</strong>
+        <span>Gliserin ve hyaluronik asit ile nemlendirir. Hoş kokusuyla bakım keyifli.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Usage strip -->
+  <div class="usage-strip">
+    <div class="usage-icon">📋</div>
+    <div class="usage-text">
+      <strong>Kullanım:</strong> Temiz ve nemli cilde dairesel hareketlerle masaj yaparak uygulayın ve bol suyla durulayın.
+      <strong>Haftada 2–3 kez.</strong>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="bottom-bar">
+    <span class="volume">300 ml</span>
+    <button class="cta-btn">Şimdi Keşfet</button>
+    <span class="warning">Harici kullanım içindir.<br>Göz ile temasından kaçının.</span>
+  </div>
+</div>
+</body>
+</html>
