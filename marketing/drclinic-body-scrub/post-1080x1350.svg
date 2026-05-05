@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <!-- Background gradient: cream to soft pink -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFF5F5"/>
+      <stop offset="55%"  stop-color="#FFE8EE"/>
+      <stop offset="100%" stop-color="#FADDE6"/>
+    </linearGradient>
+    <!-- Circle accent gradient -->
+    <radialGradient id="circleGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%"   stop-color="#FF8FAB"/>
+      <stop offset="100%" stop-color="#C2185B"/>
+    </radialGradient>
+    <!-- Soft blob behind product circle -->
+    <radialGradient id="blobGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FFD6E2" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFB3CA" stop-opacity="0.4"/>
+    </radialGradient>
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#C2185B" flood-opacity="0.18"/>
+    </filter>
+    <!-- Light shadow for benefit cards -->
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#C2185B" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="1080" height="1350" fill="url(#bgGrad)"/>
+
+  <!-- Decorative large circle top-right -->
+  <circle cx="980" cy="120" r="220" fill="#FFB3CA" opacity="0.25"/>
+  <!-- Decorative circle bottom-left -->
+  <circle cx="100" cy="1250" r="180" fill="#FFB3CA" opacity="0.20"/>
+  <!-- Small dot accents -->
+  <circle cx="80"  cy="200"  r="18" fill="#FF8FAB" opacity="0.35"/>
+  <circle cx="60"  cy="290"  r="10" fill="#FF8FAB" opacity="0.25"/>
+  <circle cx="990" cy="500"  r="14" fill="#FF8FAB" opacity="0.30"/>
+  <circle cx="1020" cy="580" r="8"  fill="#C2185B" opacity="0.20"/>
+  <circle cx="50"  cy="1050" r="12" fill="#FF8FAB" opacity="0.30"/>
+  <circle cx="1030" cy="1100" r="22" fill="#FFB3CA" opacity="0.35"/>
+
+  <!-- ── TOP BRAND BAR ── -->
+  <rect x="0" y="0" width="1080" height="90" fill="#C2185B" rx="0"/>
+  <!-- Brand name -->
+  <text x="540" y="58" font-family="Georgia, 'Times New Roman', serif"
+        font-size="36" font-weight="bold" fill="#FFFFFF"
+        text-anchor="middle" letter-spacing="6">DR.CLİNİC</text>
+  <!-- Tagline under brand -->
+  <text x="540" y="80" font-family="Arial, Helvetica, sans-serif"
+        font-size="16" fill="#FFD6E2" text-anchor="middle" letter-spacing="3">PROFESYONEL CİLT BAKIMI</text>
+
+  <!-- ── PRODUCT VISUAL AREA ── -->
+  <!-- Blob behind product circle -->
+  <ellipse cx="540" cy="390" rx="280" ry="260" fill="url(#blobGrad)"/>
+  <!-- Main product circle -->
+  <circle cx="540" cy="390" r="220" fill="url(#circleGrad)" filter="url(#shadow)"/>
+  <!-- Inner white ring -->
+  <circle cx="540" cy="390" r="200" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.5"/>
+  <!-- Product jar icon (simplified) -->
+  <!-- Jar body -->
+  <rect x="450" y="340" width="180" height="120" rx="18" fill="#FFFFFF" opacity="0.92"/>
+  <!-- Jar lid -->
+  <rect x="440" y="318" width="200" height="32" rx="12" fill="#FFFFFF" opacity="0.80"/>
+  <!-- Jar label band -->
+  <rect x="450" y="375" width="180" height="50" rx="0" fill="#FFE8EE" opacity="0.85"/>
+  <!-- Label text on jar -->
+  <text x="540" y="396" font-family="Georgia, serif" font-size="11" font-weight="bold"
+        fill="#C2185B" text-anchor="middle" letter-spacing="1">DR.CLİNİC</text>
+  <text x="540" y="412" font-family="Arial, sans-serif" font-size="9"
+        fill="#880E4F" text-anchor="middle">ÇİLEK ÖZLÜ KREM</text>
+  <text x="540" y="424" font-family="Arial, sans-serif" font-size="9"
+        fill="#880E4F" text-anchor="middle">PEELİNG</text>
+  <!-- Strawberry decorative icon inside circle -->
+  <text x="540" y="500" font-family="Arial, sans-serif" font-size="52"
+        text-anchor="middle">🍓</text>
+  <!-- 300ml badge -->
+  <circle cx="700" cy="270" r="46" fill="#880E4F" filter="url(#shadow)"/>
+  <text x="700" y="266" font-family="Arial, sans-serif" font-size="16" font-weight="bold"
+        fill="#FFFFFF" text-anchor="middle">300</text>
+  <text x="700" y="284" font-family="Arial, sans-serif" font-size="13"
+        fill="#FFD6E2" text-anchor="middle">ml</text>
+
+  <!-- ── PRODUCT NAME ── -->
+  <text x="540" y="670" font-family="Georgia, 'Times New Roman', serif"
+        font-size="52" font-weight="bold" fill="#880E4F"
+        text-anchor="middle" letter-spacing="1">ÇİLEK ÖZLÜ</text>
+  <text x="540" y="732" font-family="Georgia, 'Times New Roman', serif"
+        font-size="52" font-weight="bold" fill="#C2185B"
+        text-anchor="middle" letter-spacing="1">KREM PEELİNG</text>
+
+  <!-- Decorative divider line -->
+  <line x1="340" y1="756" x2="740" y2="756" stroke="#C2185B" stroke-width="2" opacity="0.5"/>
+  <circle cx="540" cy="756" r="5" fill="#C2185B"/>
+
+  <!-- ── SLOGAN ── -->
+  <text x="540" y="800" font-family="Georgia, serif"
+        font-size="28" font-style="italic" fill="#880E4F"
+        text-anchor="middle" letter-spacing="1">Pürüzsüz &amp; Canlı Cilt</text>
+
+  <!-- ── BENEFITS ── -->
+  <!-- Benefit 1 -->
+  <rect x="90" y="836" width="900" height="72" rx="36" fill="#FFFFFF" opacity="0.75" filter="url(#cardShadow)"/>
+  <circle cx="148" cy="872" r="24" fill="#C2185B"/>
+  <text x="148" y="879" font-family="Arial, sans-serif" font-size="22"
+        fill="#FFFFFF" text-anchor="middle">✦</text>
+  <text x="188" y="866" font-family="Arial, Helvetica, sans-serif"
+        font-size="22" font-weight="bold" fill="#880E4F">Kayısı Çekirdeği Tozu</text>
+  <text x="188" y="892" font-family="Arial, Helvetica, sans-serif"
+        font-size="19" fill="#555555">Ölü hücrelerden arındırır, pürüzsüz görünüm</text>
+
+  <!-- Benefit 2 -->
+  <rect x="90" y="922" width="900" height="72" rx="36" fill="#FFFFFF" opacity="0.75" filter="url(#cardShadow)"/>
+  <circle cx="148" cy="958" r="24" fill="#C2185B"/>
+  <text x="148" y="965" font-family="Arial, sans-serif" font-size="22"
+        fill="#FFFFFF" text-anchor="middle">✦</text>
+  <text x="188" y="952" font-family="Arial, Helvetica, sans-serif"
+        font-size="22" font-weight="bold" fill="#880E4F">Panax Ginseng Kök Özü</text>
+  <text x="188" y="978" font-family="Arial, Helvetica, sans-serif"
+        font-size="19" fill="#555555">Antioksidan; cilde canlı görünüm kazandırır</text>
+
+  <!-- Benefit 3 -->
+  <rect x="90" y="1008" width="900" height="72" rx="36" fill="#FFFFFF" opacity="0.75" filter="url(#cardShadow)"/>
+  <circle cx="148" cy="1044" r="24" fill="#C2185B"/>
+  <text x="148" y="1051" font-family="Arial, sans-serif" font-size="22"
+        fill="#FFFFFF" text-anchor="middle">✦</text>
+  <text x="188" y="1038" font-family="Arial, Helvetica, sans-serif"
+        font-size="22" font-weight="bold" fill="#880E4F">Gliserin + Hyaluronik Asit</text>
+  <text x="188" y="1064" font-family="Arial, Helvetica, sans-serif"
+        font-size="19" fill="#555555">Yoğun nemlendirme, yumuşak ve esnek cilt</text>
+
+  <!-- Benefit 4 -->
+  <rect x="90" y="1094" width="900" height="72" rx="36" fill="#FFFFFF" opacity="0.75" filter="url(#cardShadow)"/>
+  <circle cx="148" cy="1130" r="24" fill="#C2185B"/>
+  <text x="148" y="1137" font-family="Arial, sans-serif" font-size="22"
+        fill="#FFFFFF" text-anchor="middle">✦</text>
+  <text x="188" y="1124" font-family="Arial, Helvetica, sans-serif"
+        font-size="22" font-weight="bold" fill="#880E4F">Hoş Koku</text>
+  <text x="188" y="1150" font-family="Arial, Helvetica, sans-serif"
+        font-size="19" fill="#555555">Cilt bakımını keyifli bir deneyime dönüştürür</text>
+
+  <!-- ── CTA BUTTON ── -->
+  <rect x="290" y="1192" width="500" height="68" rx="34" fill="#C2185B"/>
+  <rect x="292" y="1194" width="496" height="64" rx="33" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.4"/>
+  <text x="540" y="1233" font-family="Arial, Helvetica, sans-serif"
+        font-size="26" font-weight="bold" fill="#FFFFFF"
+        text-anchor="middle" letter-spacing="2">HAFTADA 2–3 KEZ KULLANIN</text>
+
+  <!-- ── WARNING TEXT ── -->
+  <text x="540" y="1295" font-family="Arial, Helvetica, sans-serif"
+        font-size="14" fill="#888888" text-anchor="middle">
+    Harici kullanım içindir. Göz temasından kaçının.
+  </text>
+  <text x="540" y="1314" font-family="Arial, Helvetica, sans-serif"
+        font-size="14" fill="#888888" text-anchor="middle">
+    Temas halinde bol su ile yıkayın. Çocukların ulaşamayacağı ve serin yerde saklayın.
+  </text>
+
+  <!-- ── BOTTOM BRAND STRIP ── -->
+  <rect x="0" y="1332" width="1080" height="18" fill="#880E4F" rx="0"/>
+</svg>
